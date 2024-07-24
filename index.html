@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-section">
+            <div class="logo">
+            <img src="logo.jpg"/>
+            </div>
+            <div class="login-section">
+            <a href="#about-us">About us</a>
+            <a href="#categories">Categories</a>
+            <a href="#contact-us">Contact us</a>
+            <a href="sign-up.html">sign-up</a>
+            <!--<div class="profile">
+            <a href=""><img src="prof-icon.jpg"></a>
+            </div>-->
+            <a href="login.html">login</a>
+            </div>
+        </div>
+    </nav>
+    <div class="home-page" id="home-page">
+        <div class="boutique-name">
+            Women<span></span>
+        </div>
+        <div class="caption">
+      <h2>Elevate your wardrobe with our exclusive collection.</h2>
+      </div>
+    </div>
+    <div class="About-us" id="about-us">
+        <div class="head-section">
+            <h1>About us</h1>
+        </div>
+        <div class="description">
+            <p>
+                Nestled in the heart of the bustling city, our women's boutique store offers a haven for fashion-forward individuals seeking 
+                curated elegance and personalized style. Step into our inviting space, where every garment, accessory, and trinket tells a story of 
+                timeless sophistication and contemporary flair. From chic dresses that effortlessly transition from day to night to meticulously crafted 
+                accessories that add a touch of glamour to any ensemble, our carefully curated collection caters to the discerning tastes of modern women. 
+                With a keen eye for quality and a dedication to exclusivity, we proudly showcase designs that are as unique as the women who wear them.
+                 Our knowledgeable staff stands ready to provide personalized assistance, offering styling advice and ensuring the perfect fit for every 
+                 customer. Immerse yourself in our welcoming ambiance, where sleek décor and soft lighting create an atmosphere of luxury and refinement. 
+                 Embrace the art of self-expression and discover the joy of sartorial exploration at our women's boutique store.
+            </p>
+            <div class="slide-container">
+            <div class="slide">
+            <img class="about-img" src="about-us-1.jpg">
+            </div>
+            <div class="slide">
+            <img class="about-img" src="about-us-2.jpeg">
+            </div>
+            <div class="slide">
+            <img class="about-img" src="about-us-3.jpg">
+            </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="Categories" id="categories">
+            <div class="cat">
+                <h1>Categories</h1>
+                <div class="cat1">
+                <h2>Dress Materials</h2>
+                <h2>Lehangas</h2>
+                </div>
+            </div>
+            <div class="dresses">
+                <div class="dress-material">
+                  <img class="material" src="dress1.jpg">
+                </div>
+                <div class="dress-material">
+                 <img src="cat-img5.jpeg">
+                </div>
+            </div>
+        </div>
+        <div class="Contact-us" id="contact-us">
+            <div class="contact-section">
+                <h1>Contact Us</h1>
+                <p>We'd love to hear from you!</p>
+                <ul>
+                    <li>Address: 123 Main Street, Cityville</li>
+                    <li>Phone: +1 (123) 456-7890</li>
+                    <li>Email: info@example.com</li>
+                </ul>
+                <!-- You can also include a contact form here if needed -->
+            </div>
+            <div class="contact-form">
+                <form action="#" method="post">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Your Message:</label>
+                    <input type="message" id="message" name="message" required>
+                    
+                    <button type="submit">Send </button>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-content">
+              <div class="footer-section about">
+                <h2>About Us</h2>
+                <p>Welcome to our boutique! We offer a curated selection of fashionable items to suit your unique style.</p>
+              </div>
+              <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <p>Email: contact@boutique.com</p>
+                <p>Phone: +123 456 7890</p>
+              </div>
+              <div class="footer-section social">
+                <h2>Follow Us</h2>
+                <a href="#" target="_blank">Facebook</a>
+                <a href="#" target="_blank">Instagram</a>
+                <a href="#" target="_blank">Twitter</a>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <p>&copy; 2024 Boutique. All rights reserved.</p>
+            </div>
+          </footer>
+          
+        <script>
+        let slideIndex = 0;
+        showSlides();
+    
+        function showSlides() {
+          let slides = document.getElementsByClassName("slide");
+          for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}
+          slides[slideIndex-1].style.display = "block";
+          setTimeout(showSlides, 2000);
+        }
+        </script>
+</body>
+</html>
